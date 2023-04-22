@@ -1,20 +1,26 @@
 CLI: revanced-cli-2.21.0-all.jar  
-Integrations: revanced-integrations-0.102.1.apk  
-Patches: revanced-patches-2.168.40.jar  
+Integrations: revanced-integrations-0.102.3.apk  
+Patches: revanced-patches-2.168.45.jar  
 
 YouTube
 ==
-- fix(general-ads): `Hide general ads` hides offline download list
+- remove `hide-live-chat-button` patch (no longer valid in new layout)
+- fix(client-spoof): use better patch description
+- fix(hide-time-stamp): reboot dialog should be shown
+- fix(return-youtube-dislike): add missing strings https://github.com/inotia00/ReVanced_Extended/issues/791
 - crowdin translation update
-`French`, `Polish`
+`Arabic`, `French`, `Greek`, `Italian`, `Korean`, `Polish`, `Russian`, `Spanish`, `Turkish`, `Vietnamese`
 
 
 YouTube Music
 ==
-- add `share-button-hook` patch (Experimental Flags)
-: Replace share button with external download button. The package name of the default downloader can be changed through `options.toml`. (Default: PowerTube)
-- refactor(hide-new-playlist): apply a much safer patching method (also fix https://github.com/inotia00/ReVanced_Extended/issues/685)
-- refactor(hide-upgrade-button): hide upgrade banner from homepage
+- crowdin translation update
+`Korean`
+
+
+ETC
+==
+- add support YouTube v18.15.38
 
 
 ※ Compatible ReVanced Manager: v0.0.57
@@ -25,9 +31,9 @@ YouTube Music
 - [Other Countries](https://crowdin.com/project/revancedextended)
   
 **App Versions:**  
-YouTube: 18.14.41  
-Music (arm64-v8a): 5.52.51  
-Music (arm-v7a): 5.52.51  
+YouTube: 18.15.38  
+Music (arm64-v8a): 5.53.50  
+Music (arm-v7a): 5.53.50  
 
 Install [Vanced Microg](https://github.com/TeamVanced/VancedMicroG/releases) to be able to use non-root YouTube or Music  
 
