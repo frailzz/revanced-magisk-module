@@ -27,15 +27,15 @@ jobs:
             v=$(toml_get "$t" "version") || v=""
             if isoneof "$v" latest beta; then
               cur_yt=$(sed -n 's/.*YouTube: \(.*\)/\1/p' build.md | xargs)
-              [ -z "$cur_yt" ] && return 1 # empty, fail=>dont build
+              [ -z "$cur_yt" ] && return 1 # empty, fail=>just build
               if [ "$v" = beta ]; then aav="true"; else aav="false"; fi
               last_ver=$(get_apkmirror_vers youtube "$aav" | get_largest_ver)
-              [ -z "$last_ver" ] && return 1 # cant fetch, dont build
+              [ -z "$last_ver" ] && return 1 # cant fetch, just build
               echo "current yt version: '$cur_yt'"
               echo "latest yt version: '$last_ver'"
-              [ "$cur_yt" != "$last_ver" ] # test success=>build, fail=>dont build
+              [ "$cur_yt" != "$last_ver" ] # test success=>build, fail=>just build
             else
-              return 1 # not experimental, dont build
+              return 1 # not experimental, just build
             fi
           }
 
@@ -47,7 +47,7 @@ jobs:
 
             echo "current patches version: $cur_patches"
             echo "latest patches version: $last_patches"
-            [ "$cur_patches" != "$last_patches" ] # test success=>build, fail=>dont build
+            [ "$cur_patches" != "$last_patches" ] # test success=>build, fail=>just build
           }
 
           if ! git checkout update; then
@@ -57,8 +57,8 @@ jobs:
             echo "build!"
             echo "SHOULD_BUILD=1" >> $GITHUB_OUTPUT
           else
-            echo "dont build!"
-            echo "SHOULD_BUILD=0" >> $GITHUB_OUTPUT
+            echo "just build!"
+            echo "SHOULD_BUILD=1" >> $GITHUB_OUTPUT
           fi
 
     outputs:
