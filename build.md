@@ -1,6 +1,20 @@
-CLI: revanced-cli-2.22.0-all.jar  
-Integrations: revanced-integrations-0.107.10.apk  
-Patches: revanced-patches-2.173.10.jar  
+YouTube: 18.19.35  
+YouTube-Extended: 18.17.43  
+Music (arm-v7a): 5.39.52  
+Music (arm64-v8a): 5.39.52  
+Twitch: 14.6.1  
+Music-Extended (arm-v7a): 6.05.51  
+Music-Extended (arm64-v8a): 6.05.51  
+
+Install [Vanced Microg](https://github.com/TeamVanced/VancedMicroG/releases) for non-root YouTube or YT Music  
+
+[revanced-magisk-module](https://github.com/j-hc/revanced-magisk-module)  
+
+---
+Changelog:  
+CLI: j-hc/revanced-cli-2.22.0-all.jar  
+Integrations: inotia00/revanced-integrations-0.107.10.apk  
+Patches: inotia00/revanced-patches-2.173.10.jar  
 
 YouTube
 ==
@@ -25,12 +39,13 @@ YouTube Music
 [Crowdin translation]
 - [European Countries](https://crowdin.com/project/revancedextendedeu)
 - [Other Countries](https://crowdin.com/project/revancedextended)
-  
-**App Versions:**  
-YouTube: 18.17.43  
-Music (arm64-v8a): 6.01.55  
-Music (arm-v7a): 6.01.55  
+---
+CLI: j-hc/revanced-cli-2.22.0-all.jar  
+Integrations: revanced/revanced-integrations-0.110.0.apk  
+Patches: revanced/revanced-patches-2.176.1.jar  
 
-Install [Vanced Microg](https://github.com/TeamVanced/VancedMicroG/releases) to be able to use non-root YouTube or Music  
+#### [2.176.1](https://github.com/revanced/revanced-patches/compare/v2.176.0...v2.176.1) (2023-06-12)
+### Bug Fixes
+* **syncforreddit/change-oauth-client-id:** use correct signature for Android API ([4db2eba](https://github.com/revanced/revanced-patches/commit/4db2eba6d66f094f1d2400bfa8b9c15a175f796e))
 
-[revanced-magisk-module](https://github.com/j-hc/revanced-magisk-module)  
+---  
