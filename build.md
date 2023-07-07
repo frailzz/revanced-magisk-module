@@ -1,11 +1,9 @@
 YouTube: 18.19.35  
 YouTube-Extended: 18.25.39  
-Music-Extended (arm64-v8a): 6.08.50  
-Music (arm64-v8a): 6.08.50  
-Music (arm-v7a): 6.08.50  
-Music-Extended (arm-v7a): 6.08.50  
-Twitch: 15.4.1  
+Music: 6.08.50  
+Music-Extended: 6.08.50  
 Twitter: 9.95.0-release.0  
+Twitch: 15.4.1  
 Reddit: 2023.26.0  
 Reddit-Extended: 2023.26.0  
 ml.docilealligator.infinityforreddit: 6.0.2  
