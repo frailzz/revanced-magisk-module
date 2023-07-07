@@ -6,6 +6,7 @@ Twitter: 9.95.0-release.0
 Twitch: 15.4.1  
 Reddit: 2023.26.0  
 Reddit-Extended: 2023.26.0  
+Boost: 1.12.12  
 ml.docilealligator.infinityforreddit: 6.0.2  
 
 Install [Vanced Microg](https://github.com/TeamVanced/VancedMicroG/releases) for non-root YouTube or YT Music  
