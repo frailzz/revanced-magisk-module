@@ -5,7 +5,9 @@ Music (arm64-v8a): 6.08.50
 Music (arm-v7a): 6.08.50  
 Music-Extended (arm-v7a): 6.08.50  
 Twitch: 15.4.1  
+Twitter: 9.95.0-release.0  
 Reddit: 2023.26.0  
+Reddit-Extended: 2023.26.0  
 ml.docilealligator.infinityforreddit: 6.0.2  
 
 Install [Vanced Microg](https://github.com/TeamVanced/VancedMicroG/releases) for non-root YouTube or YT Music  
