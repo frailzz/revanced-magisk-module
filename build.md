@@ -1,5 +1,7 @@
 YouTube: 18.23.35  
 YouTube-Extended: 18.27.35  
+Music-Extended: 6.11.52  
+Music: 6.11.52  
 Twitter: 9.98.0-release.0  
 Twitch: 15.4.1  
 Reddit: 2023.29.0  
@@ -35,7 +37,7 @@ Patches: ReVanced/revanced-patches-2.186.0.jar
 
 
 ---
-CLI: j-hc/revanced-cli-2.23.0-all.jar  
+CLI: inotia00/revanced-cli-2.22.2-all.jar  
 Integrations: inotia00/revanced-integrations-0.114.4.apk  
 Patches: inotia00/revanced-patches-2.186.4.jar  
 
