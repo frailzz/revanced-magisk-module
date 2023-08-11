@@ -1,11 +1,11 @@
 YouTube: 18.23.35  
 YouTube-Extended: 18.30.37  
-Music: 6.13.52  
-Music-Extended: 6.13.52  
-Twitter: 10.1.0-release.0  
+Music: 6.14.50  
+Music-Extended: 6.14.50  
+Twitter: 10.2.0-release.0  
 Twitch: 15.4.1  
-Reddit: 2023.30.0  
-Reddit-Extended: 2023.30.0  
+Reddit: 2023.31.0  
+Reddit-Extended: 2023.31.0  
 
 Install [Vanced Microg](https://github.com/TeamVanced/VancedMicroG/releases) for non-root YouTube or YT Music  
 
@@ -14,7 +14,7 @@ Install [Vanced Microg](https://github.com/TeamVanced/VancedMicroG/releases) for
 ---
 Changelog:  
 CLI: j-hc/revanced-cli-2.23.0-all.jar  
-Integrations: ReVanced/revanced-integrations-0.115.0.apk  
+Integrations: ReVanced/revanced-integrations-0.115.1.apk  
 Patches: ReVanced/revanced-patches-2.187.0.jar  
 
 ### [2.187.0](https://github.com/ReVanced/revanced-patches/compare/v2.186.0...v2.187.0) (2023-08-02)
@@ -32,6 +32,15 @@ Patches: ReVanced/revanced-patches-2.187.0.jar
 * **Sync for Reddit:** add `Disable Sync for Lemmy bottom sheet` patch ([56b535b](https://github.com/ReVanced/revanced-patches/commit/56b535b2a136d4b0afbddf2c8e251889c2555056))
 * **YouTube - Hide layout components:** Hide `chips shelf` ([#2699](https://github.com/ReVanced/revanced-patches/issues/2699)) ([8e6058b](https://github.com/ReVanced/revanced-patches/commit/8e6058b62350b3d14d79e6fe52b0ad781b66b5de))
 * **YouTube:** add `Player Flyout Menu` patch ([#2295](https://github.com/ReVanced/revanced-patches/issues/2295)) ([aea0af0](https://github.com/ReVanced/revanced-patches/commit/aea0af059784ae4820a0e73ff91f97bbc3ebc4c7))
+
+---
+CLI: inotia00/revanced-cli-2.22.2-all.jar  
+Integrations: YT-Advanced/revanced-integrations-0.116.0.apk  
+Patches: YT-Advanced/revanced-patches-2.188.5.jar  
+
+#### [2.188.5](https://github.com/YT-Advanced/Testpatch/compare/v2.188.4...v2.188.5) (2023-08-11)
+### Bug Fixes
+* Drop ([609cb64](https://github.com/YT-Advanced/Testpatch/commit/609cb64ab4796df8a102c1cc06fb873a6756c09e))
 
 ---
 CLI: inotia00/revanced-cli-2.22.2-all.jar  
