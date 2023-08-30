@@ -49,7 +49,7 @@ Etc
 ※ Compatible ReVanced Manager: [RVX Manager v1.5.2 (fork)](https://github.com/inotia00/revanced-manager/releases/tag/v1.5.2)
 
 ---
-CLI: j-hc/revanced-cli-3.0.1-all.jar  
+CLI: j-hc/revanced-cli-2.23.0-all.jar  
 Integrations: ReVanced/revanced-integrations-0.117.0.apk  
 Patches: ReVanced/revanced-patches-2.189.0.jar  
 
