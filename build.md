@@ -1,7 +1,5 @@
 YouTube-Extended: 18.30.37  
-YouTube-ReX: 18.33.40  
 Music-Extended: 6.16.52  
-Music-ReX: 6.16.52  
 Reddit-Extended: 2023.34.0  
 
 Install [Vanced Microg](https://github.com/TeamVanced/VancedMicroG/releases) for non-root YouTube or YT Music  
@@ -9,27 +7,6 @@ Install [Vanced Microg](https://github.com/TeamVanced/VancedMicroG/releases) for
 [revanced-magisk-module](https://github.com/j-hc/revanced-magisk-module)  
 ---
 Changelog:  
-CLI: inotia00/revanced-cli-2.22.2-all.jar  
-Integrations: YT-Advanced/revanced-integrations-0.117.3.apk  
-Patches: YT-Advanced/revanced-patches-2.189.1.jar  
-
-### [2.190.0](https://github.com/YT-Advanced/ReX-patches/compare/v2.189.0...v2.190.0) (2023-08-29)
-
-## Note: Use Revanced Manager for build !
-
-### Bug Fixes
-
-* **youtube/hide-fullscreen-panel:** Not worked correctly
-
-
-### Features
-
-* Add support for `v18.33.40` ([4bdebec](https://github.com/YT-Advanced/ReX-patches/commit/4bdebecf38c4f17c8467e4adddc4c63861943e1e))
-
-
-
-
----
 CLI: inotia00/revanced-cli-2.22.2-all.jar  
 Integrations: inotia00/revanced-integrations-0.115.1.apk  
 Patches: inotia00/revanced-patches-2.187.1.jar  
