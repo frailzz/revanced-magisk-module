@@ -4,10 +4,10 @@ YouTube-ReX: 18.31.40
 Music: 6.21.51  
 Music-Extended: 6.21.51  
 Music-ReX: 6.20.51  
-Twitter: 10.9.0-release.0  
+Twitter: 10.10.0-release.0  
 Twitch: 15.4.1  
 Reddit: 2023.38.0  
-Reddit-Extended: 2023.38.0  
+Reddit-Extended: 2023.39.0  
 
 Install [Vanced Microg](https://github.com/TeamVanced/VancedMicroG/releases) for non-root YouTube or YT Music  
 
@@ -15,9 +15,9 @@ Install [Vanced Microg](https://github.com/TeamVanced/VancedMicroG/releases) for
 
 Changelog:  
 CLI: inotia00/revanced-cli-3.1.4-all.jar  
-Integrations: inotia00/revanced-integrations-0.117.18.apk  
-Patches: inotia00/revanced-patches-2.190.18.jar  
-[Changelog](https://github.com/inotia00/revanced-patches/releases/tag/v2.190.18)
+Integrations: inotia00/revanced-integrations-0.117.21.apk  
+Patches: inotia00/revanced-patches-2.190.21.jar  
+[Changelog](https://github.com/inotia00/revanced-patches/releases/tag/v2.190.21)
 
 CLI: j-hc/revanced-cli-3.2.0-all.jar  
 Integrations: ReVanced/revanced-integrations-0.117.1.apk  
