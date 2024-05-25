@@ -1,4 +1,4 @@
-enable-magisk-update = true   # set this to false if you do not want to receive updates for the module in magisk app
+enable-magisk-update = false   # set this to false if you do not want to receive updates for the module in magisk app
 
 # add 'enabled = false' for not patching a specific app or remove it from the config
 # see https://github.com/j-hc/revanced-magisk-module/blob/main/CONFIG.md for more detailed explanations
@@ -6,26 +6,12 @@ enable-magisk-update = true   # set this to false if you do not want to receive 
 # you can use rvmm-config-gen to generate a config
 
 [YouTube]
-build-mode = "both"
+build-mode = "apk"
 excluded-patches = ""
 included-patches = ""
 version = "auto"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
-
-[Music]
-build-mode = "both"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
-arch = "both"
-
-[Music-Extended]
-app-name = "Music"
-patches-source = "inotia00/revanced-patches"
-integrations-source = "inotia00/revanced-integrations"
-cli-source = "inotia00/revanced-cli"
-rv-brand = "ReVanced Extended"
-build-mode = "both"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
-arch = "both"
+# apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
 
 [YouTube-Extended]
 app-name = "YouTube"
@@ -34,31 +20,54 @@ integrations-source = "inotia00/revanced-integrations"
 cli-source = "inotia00/revanced-cli"
 rv-brand = "ReVanced Extended"
 build-mode = "both"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
+excluded-patches = "'Custom branding icon YouTube' 'Custom branding name YouTube'"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
 
-[Twitter]
+[Music]
 build-mode = "apk"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.twitter.android"
+archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
+# apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music/"
+arch = "arm64-v8a"
+
+[Music-Extended]
+app-name = "Music"
+patches-source = "inotia00/revanced-patches"
+integrations-source = "inotia00/revanced-integrations"
+cli-source = "inotia00/revanced-cli"
+rv-brand = "ReVanced Extended"
+build-mode = "both"
+excluded-patches = "'Custom branding icon YouTube Music' 'Custom branding name YouTube Music'"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music/"
+arch = "arm64-v8a"
+
+[Reddit-Extended]
+app-name = "Reddit"
+patches-source = "inotia00/revanced-patches"
+integrations-source = "inotia00/revanced-integrations"
+cli-source = "inotia00/revanced-cli"
+rv-brand = "ReVanced Extended"
+archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.reddit.frontpage"
 
 [Twitch]
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/tv.twitch.android.app"
 
-[TikTok]
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.zhiliaoapp.musically"
-included-patches = "'SIM spoof'"
-
-[Reddit]
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.reddit.frontpage"
-
-[Messenger]
+[YouTube-ReX]
 enabled = false
-apkmirror-dlurl = "https://www.apkmirror.com/apk/facebook-2/messenger/"
+app-name = "YouTube"
+patches-source = "YT-Advanced/ReX-patches"
+integrations-source = "YT-Advanced/ReX-integrations"
+rv-brand = "ReX"
+build-mode = "both"
+excluded-patches = "'Custom branding heading' 'Custom branding icon YouTube' 'Custom branding name YouTube'"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
+
+[Music-ReX]
+enabled = false
+app-name = "Music"
+patches-source = "YT-Advanced/ReX-patches"
+integrations-source = "YT-Advanced/ReX-integrations"
+rv-brand = "ReX"
+build-mode = "both"
+excluded-patches = "'Custom branding icon YouTube Music' 'Custom branding name YouTube Music'"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music/"
 arch = "arm64-v8a"
-
-[Spotify]
-enabled = false
-uptodown-dlurl = "https://spotify.en.uptodown.com/android"
-
-[IconPackStudio]
-enabled = false
-apkmirror-dlurl = "https://www.apkmirror.com/apk/smart-launcher-team/icon-pack-studio/"
