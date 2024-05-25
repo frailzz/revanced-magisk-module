@@ -1,6 +1,6 @@
-Music: 7.02.51  
 Music-Extended: 6.50.51  
 YouTube-Extended: 19.16.39  
+Music: 7.02.51  
 Reddit-Extended: 2024.17.0  
 YouTube: 19.11.43  
 Twitch: 16.9.1  
@@ -19,7 +19,3 @@ CLI: j-hc/revanced-cli-4.6.0-all.jar
 Integrations: ReVanced/revanced-integrations-1.9.1.apk  
 Patches: ReVanced/revanced-patches-4.8.2.jar  
 [Changelog](https://github.com/ReVanced/revanced-patches/releases/tag/v4.8.2)  
-
-Skipped:  
-Patches: ReVanced/revanced-patches-4.8.2.jar  
-Patches: inotia00/revanced-patches-4.7.1.jar    
