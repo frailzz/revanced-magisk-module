@@ -13,7 +13,7 @@ cli-source = "inotia00/revanced-cli"
 rv-brand = "ReVanced Extended"
 version = "19.16.39"
 build-mode = "both"
-excluded-patches = "'Custom branding icon YouTube' 'Custom branding name YouTube'"
+excluded-patches = "'Custom Shorts action buttons' 'Custom branding icon for YouTube' 'Custom branding name for YouTube' 'Custom header for YouTube'"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
 
 [Music-Extended]
@@ -24,11 +24,12 @@ integrations-source = "inotia00/revanced-integrations"
 cli-source = "inotia00/revanced-cli"
 rv-brand = "ReVanced Extended"
 build-mode = "both"
-excluded-patches = "'Custom branding icon YouTube Music' 'Custom branding name YouTube Music'"
+excluded-patches = "'Custom branding icon for YouTube Music' 'Custom branding name for YouTube Music' 'Custom header for YouTube Music'"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music/"
 arch = "arm64-v8a"
 
 [YouTube-Extendeded]
+enabled = false
 app-name = "YouTube"
 patches-source = "anddea/revanced-patches"
 integrations-source = "anddea/revanced-integrations"
