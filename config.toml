@@ -48,4 +48,5 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 
 [Spotify]
+arch = "arm64-v8a"
 uptodown-dlurl = "https://spotify.en.uptodown.com/android"
