@@ -13,7 +13,7 @@ cli-source = "MorpheApp/morphe-cli"
 rv-brand = "Morphe"
 build-mode = "both"
 # excluded-patches = "'Custom branding' 'Change header'"
-# apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
 
@@ -25,11 +25,12 @@ rv-brand = "Morphe"
 build-mode = "both"
 arch = "arm64-v8a"
 # excluded-patches = "'Custom branding' 'Change header'"
-# apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
 
 [YouTube-anddea]
+enabled = false
 app-name = "YouTube"
 patches-source = "anddea/revanced-patches"
 cli-source = "MorpheApp/revanced-cli"
@@ -41,6 +42,7 @@ excluded-patches = "'Custom branding icon for YouTube' 'Custom branding name for
 uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 
 [Music-anddea]
+enabled = false
 app-name = "Music"
 patches-source = "anddea/revanced-patches"
 cli-source = "MorpheApp/revanced-cli"
