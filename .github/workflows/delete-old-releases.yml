@@ -1,17 +1,89 @@
-name: Delete Old Releases
+# .github/workflows/delete-old-releases.yml
+name: Delete old releases
+
 on:
-  workflow_dispatch:
   schedule:
-    - cron: '0 0 * * 0'  # Weekly at midnight UTC
+    - cron: '0 17 * * *'   # midnight UTC+7 (17:00 UTC daily)
+  workflow_dispatch:
+
+env:
+  KEEP_LATEST: 5
+  DELETE_PRERELEASE: false
 
 jobs:
   delete-old-releases:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
     steps:
-      - uses: Nats-ji/delete-old-releases@v1
+      - name: Delete old releases and tags
+        uses: actions/github-script@v7
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          keep-count: 5
-          keep-old-minor-releases: true
-          keep-old-minor-releases-count: 1
-          remove-tags: true
+          script: |
+            const keepLatest   = parseInt(process.env.KEEP_LATEST);
+            const deletePrerel = process.env.DELETE_PRERELEASE === 'true';
+
+            const releases = await github.paginate(
+              github.rest.repos.listReleases,
+              { owner: context.repo.owner, repo: context.repo.repo, per_page: 100 }
+            );
+
+            console.log(`Found ${releases.length} total releases. Keeping ${keepLatest} latest.`);
+
+            const sorted = releases.sort(
+              (a, b) => new Date(b.created_at) - new Date(a.created_at)
+            );
+
+            const toDelete = sorted.filter((r, i) => {
+              if (i < keepLatest) return false;
+              if (r.prerelease && !deletePrerel) return false;
+              return true;
+            });
+
+            if (toDelete.length === 0) {
+              console.log('Nothing to delete.');
+              return;
+            }
+
+            for (const release of toDelete) {
+              console.log(`Processing release: ${release.tag_name} (id ${release.id})`);
+
+              // 1. Delete assets
+              const { data: assets } = await github.rest.repos.listReleaseAssets({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                release_id: release.id,
+              });
+
+              for (const asset of assets) {
+                await github.rest.repos.deleteReleaseAsset({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  asset_id: asset.id,
+                });
+                console.log(`  Deleted asset: ${asset.name}`);
+              }
+
+              // 2. Delete release
+              await github.rest.repos.deleteRelease({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                release_id: release.id,
+              });
+              console.log(`  Deleted release: ${release.tag_name}`);
+
+              // 3. Delete tag
+              try {
+                await github.rest.git.deleteRef({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  ref: `tags/${release.tag_name}`,
+                });
+                console.log(`  Deleted tag: ${release.tag_name}`);
+              } catch (err) {
+                console.warn(`  Could not delete tag ${release.tag_name}: ${err.message}`);
+              }
+            }
+
+            console.log(`Done. Deleted ${toDelete.length} release(s) and their tags.`);
