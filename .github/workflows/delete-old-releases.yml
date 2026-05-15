@@ -1,5 +1,6 @@
 name: Delete Old Releases
 on:
+  workflow_dispatch:
   schedule:
     - cron: '0 0 * * 0'  # Weekly at midnight UTC
 
@@ -10,7 +11,7 @@ jobs:
       - uses: Nats-ji/delete-old-releases@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          keep-count: 10
+          keep-count: 5
           keep-old-minor-releases: true
           keep-old-minor-releases-count: 1
           remove-tags: true
