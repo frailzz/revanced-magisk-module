@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 env:
-  KEEP_LATEST: 5
+  KEEP_LATEST: 10
   DELETE_PRERELEASE: false
 
 jobs:
