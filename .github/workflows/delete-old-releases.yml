@@ -3,7 +3,7 @@ name: Delete old releases
 
 on:
   schedule:
-    - cron: '0 17 * * *'   # midnight UTC+7 (17:00 UTC daily)
+    - cron: '0 17 1 * *'   # midnight UTC+7 (17:00 UTC daily)
   workflow_dispatch:
 
 env:
