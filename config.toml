@@ -28,22 +28,3 @@ excluded-patches = "'Custom header logo' 'Custom branding'"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
-
-[Twitter]
-patches-source = "crimera/piko"
-cli-source = "MorpheApp/morphe-cli"
-rv-brand = "Piko"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/x-corp/twitter/"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.twitter.android"
-build-mode = "module"
-version = "11.81.0-release.0"
-include-stock = "split"
-
-[ProtonVPN]
-app-name = "ProtonVPN"
-patches-source = "hoo-dles/morphe-patches"
-cli-source = "MorpheApp/morphe-cli"
-rv-brand = "Morphe"
-build-mode = "apk"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/proton-technologies-ag/protonvpn-secure-and-free-vpn/"
-uptodown-dlurl = "https://protonvpn.en.uptodown.com/android"
